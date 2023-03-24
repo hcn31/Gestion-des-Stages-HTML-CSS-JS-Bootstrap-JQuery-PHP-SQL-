@@ -1,0 +1,185 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+header {
+  background: #fff;
+  padding: 10px 20px;
+      position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;    
+  z-index: 991;
+}
+.menu{
+  display:inline-block;
+  cursor: pointer;
+}
+.main {
+  position: relative;
+  top: 0px !important;
+}
+aside {
+  width: 60px;
+  background: #fff;
+  padding: 0px 0px 10px 0px;
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  height: 100%;
+  overflow: hidden;
+  z-index: 99;
+}
+aside ul {
+  list-style: none;
+  width: 100%;
+}
+aside ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+  position: relative;
+}
+aside ul li a {
+  font-size: 14px;
+  color: #4a4a4a;
+  text-decoration: none;
+  text-transform:uppercase;   
+  white-space: nowrap;
+  display: inline-block;
+}
+aside ul li a span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000000;
+  width: 38px;
+}
+article {
+  background: #fff;
+  margin-left: 60px;
+  width: 90%;
+  height: auto;
+}
+aside ul li:hover {
+  background: #fff;
+  box-shadow: inset 0px 0px 77px #dedede;
+}
+aside ul li a span.notif {
+  position: absolute;
+  top: 8px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  background: #343436;
+  line-height: 31px;
+  border-radius: 100%;
+  color: #fff;
+}
+.red {
+  background: #0fb5f1!important;         box-shadow: 0px 0px 3px #0fb5f1;
+}
+.yellow {
+  background: #0fb5f1 !important;         box-shadow: 0px 0px 3px #0fb5f1;
+}
+.green {
+  background: #0fb5f1 !important;
+  box-shadow: 0px 0px 3px #0fb5f1;
+}
+aside ul li a span.notif.green {
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    right: 5px;    
+    transition: all 0.2s ease;
+}
+aside ul li a span.notif.yellow  {
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    right: 5px;
+    transition: all 0.2s ease;
+}
+aside ul li a span.notif.red  {
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    right: 5px;
+    transition: all 0.2s ease;
+}
+aside ul li:hover a span.notif.red {
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    color: #fff;
+    top: 10px;
+}
+aside ul li:hover a span.notif.yellow{
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    color: #fff;
+ 
+    top: 10px;
+}
+aside ul li:hover a span.notif.green{
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    color: #fff;
+  
+    top: 10px;
+}
+aside.keep.width {
+    width: 220px;
+}
+aside.keep.width ul li a span.notif {
+    width: 30px;
+    height: auto;
+    right: 10px;
+    color: #fff;
+    box-shadow: 0px 0px 10px transparent;
+    top: 8px;
+}
+
+aside {
+  height: auto !important;
+}
+/*  */
+.keep {
+  background: white;
+}
+
+
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+p.blink.mah {
+  text-align: center;
+  line-height: 25;
+  position:relative;
+}
+p.blink.mah span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 102, 153, 0);
+  top: 248px;
+  left: 360px;
+}
+/* image profil */
+
+.image{
+border-radius: 50% ;
+width: 70px;
+height: 70px;
+}

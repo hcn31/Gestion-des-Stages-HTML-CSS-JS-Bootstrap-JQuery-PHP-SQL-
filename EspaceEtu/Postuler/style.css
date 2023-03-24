@@ -1,0 +1,126 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+
+section .section-title {
+    color: #004e7b;
+    margin-bottom: 10px;
+    font-size: xx-large;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .50rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 3s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition:3s;
+    -moz-transition: 3s;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 3s;
+    transform-style: preserve-3d;
+
+}
+
+.frontside {
+    margin-bottom: 10px;
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);    
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    right:15%;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+
+}
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 3s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 3s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 3s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 3s;
+    -ms-transform-style: preserve-3d;
+    transition: 3;
+    transform-style: preserve-3d;
+}
+p,a{
+    font-size:small;
+    margin-bottom: -0.1px !important;
+}
+.frontside ,
+.backside,.card-body,#team .card {
+    background-color:white;
+    width:220px ;
+    height: 270px;
+    border:none;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: rgb(37, 119, 226) !important;
+}
+ img {
+    width: 50px;
+    height: 50px;
+   min-width: 50px;
+   min-height: 50px;
+}
+
+#add1{
+    font-size: large ;
+    display: inline;
+    text-decoration: none;
+    color: white;
+
+}
+
+.row{
+    display: flex !important;
+    justify-content: center !important;
+}
+.bi{
+    font-size:15px !important;
+    margin-right: 5px;
+}
